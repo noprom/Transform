@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *btnIcon;
+- (IBAction)move;
+- (IBAction)rotate;
+- (IBAction)scale;
 
 @end
 
@@ -24,4 +28,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 移动
+- (IBAction)move {
+//    // 1.获取原始结构体的值(基于原来的值进行修改)
+//    CGAffineTransform transform = self.btnIcon.transform;
+    
+    // 2.修改结构体的值
+//    self.btnIcon.transform = CGAffineTransformMakeTranslation(0, -50); // 不会进行叠加
+    
+    // 基于一个旧的值进行平移
+    self.btnIcon.transform = CGAffineTransformTranslate(self.btnIcon.transform, 0, -10);
+    // 3.重新赋值
+    
+}
+
+- (IBAction)rotate {
+}
+
+- (IBAction)scale {
+}
 @end
