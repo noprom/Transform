@@ -38,6 +38,7 @@
     
     // 基于一个旧的值进行平移
     self.btnIcon.transform = CGAffineTransformTranslate(self.btnIcon.transform, 0, -10);
+
     // 3.重新赋值
     
 }
@@ -45,6 +46,10 @@
 - (IBAction)rotate {
 }
 
+// 缩放
 - (IBAction)scale {
+//    self.btnIcon.transform = CGAffineTransformMakeScale(1.5, 1.5); // 不基于以前的值
+    
+    self.btnIcon.transform = CGAffineTransformScale(self.btnIcon.transform, 1.5, 1.5);
 }
 @end
