@@ -43,7 +43,9 @@
     
 }
 
+// 旋转
 - (IBAction)rotate {
+    self.btnIcon.transform = CGAffineTransformMakeRotation(M_PI_4); // 45度
 }
 
 // 缩放
