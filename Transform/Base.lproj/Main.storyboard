@@ -33,12 +33,6 @@
                                     <action selector="move" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Hdm-bk-npe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZa-QT-jGs">
-                                <rect key="frame" x="277" y="472" width="30" height="30"/>
-                                <state key="normal" title="旋转">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCm-mt-nIJ">
                                 <rect key="frame" x="165" y="472" width="30" height="30"/>
                                 <state key="normal" title="缩放">
@@ -47,6 +41,21 @@
                                 <connections>
                                     <action selector="rotate" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qax-kt-6g5"/>
                                     <action selector="scale" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sRh-ik-PYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZa-QT-jGs">
+                                <rect key="frame" x="277" y="472" width="30" height="30"/>
+                                <state key="normal" title="旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ml9-iH-Mzl">
+                                <rect key="frame" x="165" y="577" width="30" height="30"/>
+                                <state key="normal" title="复原">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OkQ-je-zfr"/>
                                 </connections>
                             </button>
                         </subviews>

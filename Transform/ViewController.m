@@ -10,9 +10,11 @@
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btnIcon;
-- (IBAction)move;
-- (IBAction)rotate;
-- (IBAction)scale;
+
+- (IBAction)move; //平移
+- (IBAction)rotate;//旋转
+- (IBAction)scale;//缩放
+- (IBAction)goBack;//复原
 
 @end
 
@@ -60,5 +62,10 @@
 //    self.btnIcon.transform = CGAffineTransformMakeScale(1.5, 1.5); // 不基于以前的值
     
     self.btnIcon.transform = CGAffineTransformScale(self.btnIcon.transform, 1.5, 1.5);
+}
+
+// 复原
+- (IBAction)goBack {
+    self.btnIcon.transform = CGAffineTransformIdentity;
 }
 @end
