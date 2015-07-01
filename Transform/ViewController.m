@@ -45,7 +45,14 @@
 
 // 旋转
 - (IBAction)rotate {
-    self.btnIcon.transform = CGAffineTransformMakeRotation(M_PI_4); // 45度
+//    self.btnIcon.transform = CGAffineTransformMakeRotation(M_PI_4); // 45度
+    // 在动画里面进行
+    [UIView animateWithDuration:2.5 animations:^{
+        self.btnIcon.transform = CGAffineTransformMakeRotation(-M_PI_4); // 逆时针45度
+        self.btnIcon.transform = CGAffineTransformTranslate(self.btnIcon.transform, 0, -10);
+        self.btnIcon.transform = CGAffineTransformScale(self.btnIcon.transform, 1.5, 1.5);
+    }];
+    
 }
 
 // 缩放
